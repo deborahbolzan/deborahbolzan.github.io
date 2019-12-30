@@ -27,7 +27,7 @@ main {
 
 .motivation {
   padding-top: 70px;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 600;
 }
 
@@ -48,9 +48,15 @@ a:hover, a:visited {
   text-decoration: none;
 }
 
-.title {
+.name {
   font-size: 26px;
   font-weight: 600;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(100, 100, 100);
 }
 
 .emphasis {
