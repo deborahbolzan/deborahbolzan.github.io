@@ -1,6 +1,5 @@
 body {
   font-family: "Avenir Next", Helvetica, Arial, sans-serif;
-  background-color: white;
 }
 
 body, .container-fluid, .row {
@@ -8,79 +7,82 @@ body, .container-fluid, .row {
   margin: 0;
 }
 
-.row {
-  width: 100%;
+.header {
+  margin-bottom: 24px;
 }
 
-#wrap {
-  min-height: 100%;
+.logo {
+  height: 100px;
+  width: 100px;
+  margin: 20px 20px 0px 20px;
 }
 
-header {
-  padding: 20px 40px;
-}
-
-main {
-  padding-left: 40px;
-  padding-bottom: 80px;
-}
-
-.motivation {
-  padding-top: 40px;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-.explanation {
-  margin-top: 40px;
-  padding: 15px;
-  font-size: 20px;
-  border: solid 1px lightgray;
-  border-radius: 4px;
-}
-
-.more {
-  padding-top: 120px;
-  padding-bottom: 40px;
-  font-size: 30px;
-  font-weight: 600;
-  color: rgb(100, 100, 100);
-}
-
-a {
-  color: gray;
-  text-decoration: none;
-}
-
-a:hover, a:visited {
-  text-decoration: none;
-}
-
-.name {
-  font-size: 26px;
+.tagline {
+  margin: 0px 0px 6px 36px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 .title {
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(100, 100, 100);
+  position: absolute;
+  padding: 2px 10px;
+  background-color: rgb(127, 241, 226);
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.emphasis {
-  background-color: rgb(172, 223, 221);
+.what {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        text-align: center;
-    }
-    .motivation {
-      padding-top: 20px;
-      margin-bottom: 40px;
-    }
-    .main {
-      padding: 0 20px;
-      margin-bottom: -40px;
-    }
+.how {
+  border-bottom: 1px solid black;
+}
+
+.service_list {
+  padding: 60px 0px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 70px;
+}
+
+p {
+  break-after: column;
+  font-size: 16px;
+}
+
+.how_text {
+  width: 600px;
+  padding: 60px 0px;
+  text-align: justify;
+  column-count: 2;
+  column-gap: 70px;
+}
+
+.third {
+  width: 30%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.fourth {
+  width: 70%;
+  border-bottom: 1px solid black;
+}
+
+.portrait_1 {
+  border: 5px solid rgb(127, 241, 226);
+}
+
+.portrait_2 {
+  border-left: 5px solid rgb(127, 241, 226);
+}
+
+.about_text {
+  width: 500px;
+  padding: 60px 0px;
+  text-align: justify;
 }
