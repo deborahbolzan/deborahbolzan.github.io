@@ -38,8 +38,8 @@ body, .container-fluid, .row {
   color: black;
 }
 
-.blue, .what, .services {
-  background-color: rgb(127, 241, 226);
+.blue, .what, .services, .content {
+  background-color: rgb(161, 196, 195);
 }
 
 .what {
@@ -53,40 +53,79 @@ body, .container-fluid, .row {
 
 h1 {
   text-align: left;
-  font-size: 80px;
+  font-size: 70px;
+}
+
+img {
+  break-after: column;
+}
+
+.profile {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 0px 20px;
+}
+
+.portrait {
+  width: 350px;
+  border: 5px solid rgb(161, 196, 195);
 }
 
 p {
-  break-after: column;
   font-size: 16px;
+  break-after: column;
+  text-align: justify;
 }
 
-.how_text {
-  width: 600px;
-  padding: 60px 0px;
-  text-align: justify;
-  column-count: 2;
-  column-gap: 70px;
+.how1, .how2 {
+  border-right: 1px solid black;
+}
+
+.how1, .how3 {
+  width: 25%;
+  padding: 60px;
+}
+
+.how2 {
+  width: 50%;
+}
+
+.comment_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.comment_wrapper:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.comment {
+  width: 70%;
+  padding: 40px 0px;
+}
+
+.content {
+  /* font-style: italic; */
+  padding: 4px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.author {
+  text-align: right;
+  padding-top: 10px;
 }
 
 .third {
-  width: 30%;
-  border-right: 1px solid black;
+  width: 60%;
   border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .fourth {
-  width: 70%;
+  width: 40%;
   border-bottom: 1px solid black;
-}
-
-.portrait_1 {
-  border: 5px solid rgb(127, 241, 226);
-}
-
-.portrait_2 {
-  border-left: 5px solid white;
-  border-right: 5px solid white;
 }
 
 .about_text {

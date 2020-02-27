@@ -7,51 +7,51 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="149.99998mm"
-   height="149.99998mm"
-   viewBox="0 0 149.99998 149.99998"
-   version="1.1"
-   id="svg8"
-   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
-   sodipodi:docname="logo.svg"
-   inkscape:export-filename="/Users/elliott/Desktop/1.png"
+   inkscape:export-ydpi="109.941"
    inkscape:export-xdpi="109.941"
-   inkscape:export-ydpi="109.941">
+   inkscape:export-filename="/Users/elliott/Desktop/1.png"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 149.99998 149.99998"
+   height="149.99998mm"
+   width="149.99998mm">
   <defs
      id="defs2">
     <inkscape:path-effect
-       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths."
-       hide_clip="false"
-       flatten="false"
-       inverse="true"
-       lpeversion="1"
-       is_visible="true"
+       effect="powerclip"
        id="path-effect905"
-       effect="powerclip" />
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
   </defs>
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.83382515"
-     inkscape:cx="344.07574"
-     inkscape:cy="312.08078"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1430"
-     inkscape:window-height="715"
-     inkscape:window-x="4"
+     inkscape:window-maximized="0"
      inkscape:window-y="23"
-     inkscape:window-maximized="0" />
+     inkscape:window-x="4"
+     inkscape:window-height="715"
+     inkscape:window-width="1430"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="212.53953"
+     inkscape:cx="336.87999"
+     inkscape:zoom="0.83382515"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -65,62 +65,62 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
+     transform="translate(-28.950773,-40.271207)"
      id="layer1"
-     transform="translate(-28.950773,-40.271207)">
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
     <path
-       sodipodi:type="rect"
-       transform="matrix(0.38102222,-0.92456588,0.91596149,0.40126619,0,0)"
-       y="63.283813"
-       x="-88.017609"
-       height="96.933983"
-       width="95.127441"
+       d="M -88.017609,63.283813 H 7.1098328 V 160.2178 H -88.017609 Z"
+       style="fill:#a1c4c3;fill-opacity:1;stroke:none;stroke-width:3.8835"
        id="rect893"
-       style="fill:#7ff1e2;fill-opacity:1;stroke:none;stroke-width:3.8835"
-       d="M -88.017609,63.283813 H 7.1098328 V 160.2178 H -88.017609 Z" />
+       width="95.127441"
+       height="96.933983"
+       x="-88.017609"
+       y="63.283813"
+       transform="matrix(0.38102222,-0.92456588,0.91596149,0.40126619,0,0)"
+       sodipodi:type="rect" />
+    <text
+       id="text835"
+       y="124.6946"
+       x="38.667011"
+       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         id="tspan839"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next Semi-Bold';word-spacing:0px;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+         y="124.6946"
+         x="38.667011"
+         sodipodi:role="line">admissions</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="38.667011"
-       y="124.6946"
-       id="text835"><tspan
-         sodipodi:role="line"
-         x="38.667011"
-         y="124.6946"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next Semi-Bold';word-spacing:0px;fill:#000000;fill-opacity:1;stroke-width:0.264583"
-         id="tspan839">admissions</tspan></text>
-    <text
-       id="text849"
-       y="100.16135"
+       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="39.530613"
-       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';stroke-width:0.264583"
-         y="100.16135"
-         x="39.530613"
+       y="100.16135"
+       id="text849"><tspan
+         sodipodi:role="line"
          id="tspan847"
-         sodipodi:role="line">the</tspan></text>
+         x="39.530613"
+         y="100.16135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';stroke-width:0.264583">the</tspan></text>
     <text
-       id="text853"
-       y="149.27864"
-       x="123.56572"
+       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';stroke-width:0.264583"
-         y="149.27864"
-         x="123.56572"
+       x="123.56572"
+       y="149.27864"
+       id="text853"><tspan
+         sodipodi:role="line"
          id="tspan851"
-         sodipodi:role="line">edit</tspan></text>
+         x="123.56572"
+         y="149.27864"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';stroke-width:0.264583">edit</tspan></text>
     <rect
-       inkscape:export-ydpi="109.941"
-       inkscape:export-xdpi="109.941"
-       inkscape:export-filename="/Users/elliott/Desktop/2.png"
-       style="fill:none;stroke:#000000;stroke-width:1.57755;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect848"
-       width="148.42244"
-       height="148.42244"
+       y="41.059982"
        x="29.739548"
-       y="41.059982" />
+       height="148.42244"
+       width="148.42244"
+       id="rect848"
+       style="fill:none;stroke:#000000;stroke-width:1.57755;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/Users/elliott/Desktop/2.png"
+       inkscape:export-xdpi="109.941"
+       inkscape:export-ydpi="109.941" />
   </g>
 </svg>
