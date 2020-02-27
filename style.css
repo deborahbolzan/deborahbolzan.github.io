@@ -39,7 +39,7 @@ body, .container-fluid, .row {
 }
 
 .blue, .what, .services, .content {
-  background-color: rgb(161, 196, 195);
+  background-color: rgb(176, 235, 233);
 }
 
 .what {
@@ -52,7 +52,7 @@ body, .container-fluid, .row {
 }
 
 h1 {
-  text-align: left;
+  text-align: center;
   font-size: 70px;
 }
 
@@ -61,15 +61,15 @@ img {
 }
 
 .profile {
-  width: 200px;
+  width: 250px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid rgb(176, 235, 233);
   margin: 0px 20px;
 }
 
 .portrait {
   width: 350px;
-  border: 5px solid rgb(161, 196, 195);
+  border: 5px solid rgb(176, 235, 233);
 }
 
 p {
@@ -78,17 +78,20 @@ p {
   text-align: justify;
 }
 
+.how1, .how2, .how3 {
+  padding: 60px;
+}
+
 .how1, .how2 {
   border-right: 1px solid black;
 }
 
 .how1, .how3 {
-  width: 25%;
-  padding: 60px;
+  width: 30%;
 }
 
 .how2 {
-  width: 50%;
+  width: 40%;
 }
 
 .comment_wrapper {
