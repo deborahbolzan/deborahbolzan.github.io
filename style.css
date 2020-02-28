@@ -38,7 +38,7 @@ body, .container-fluid, .row {
   color: black;
 }
 
-.blue, .what, .services, .content {
+.blue, .what, .content {
   background-color: rgb(176, 235, 233);
 }
 
@@ -137,21 +137,42 @@ p {
   text-align: justify;
 }
 
+.services {
+  border-bottom: solid 1px black;
+}
+
 .service_wrapper {
   padding: 60px 100px;
-  column-count: 2;
-  column-gap: 70px;
+  text-align: center;
 }
 
-.service_list {
-  border: 1px solid black;
-  background-color: white;
-  padding: 20px 40px;
-  break-after: column;
+.service_type_wrapper:not(:last-child) {
+  padding-bottom: 20px;
 }
 
-.services {
-  border-bottom: 1px solid black;
+.service_type {
+  padding-bottom: 20px;;
+}
+
+.service_type_name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.service_type_description {
+  font-style: italic;
+}
+
+.service {
+  padding: 8px 0px;
+}
+
+.service_name {
+  color: black;
+}
+
+.service_description {
+  color: grey;
 }
 
 .contact {
