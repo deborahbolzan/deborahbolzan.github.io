@@ -28,9 +28,13 @@ body, .container-fluid, .row {
 
 .title {
   position: absolute;
-  padding: 2px 10px;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  margin: 20px 36px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-style: italic;
+  color: black;
 }
 
 .white {
@@ -38,22 +42,29 @@ body, .container-fluid, .row {
   color: black;
 }
 
-.blue, .what, .content {
+.blue, .content {
   background-color: rgb(176, 235, 233);
 }
 
-.what {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.declaration_container {
+  padding: 20px 30px;
 }
 
-.how {
+.profile_container {
+  margin: 10px 30px;
+}
+
+.row_0 {
+  border-top: 1px solid black;
+}
+
+.row_0, .row_1, .row_2, .row_3, .row_4 {
   border-bottom: 1px solid black;
 }
 
 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 img {
@@ -61,37 +72,56 @@ img {
 }
 
 .profile {
-  width: 250px;
+  width: 120px;
   border-radius: 50%;
   border: 5px solid rgb(176, 235, 233);
   margin: 0px 20px;
 }
 
 .portrait {
-  width: 350px;
+  width: 275px;
   border: 5px solid rgb(176, 235, 233);
 }
 
 p {
   font-size: 16px;
   break-after: column;
-  text-align: justify;
 }
 
-.how1, .how2, .how3 {
-  padding: 60px;
+.section_0 {
+  width: 80%;
 }
 
-.how1, .how2 {
-  border-right: 1px solid black;
+.section_1 {
+  width: 20%;
 }
 
-.how1, .how3 {
+.section_2, .section_4 {
   width: 30%;
 }
 
-.how2 {
+.section_3 {
   width: 40%;
+}
+
+.section_5 {
+  width: 40%;
+}
+
+.section_6 {
+  width: 60%;
+}
+
+.section_0, .section_2, .section_3, .section_5 {
+  border-right: 1px solid black;
+}
+
+.what, .colleges, .how {
+  padding: 60px;
+}
+
+.portrait_container {
+  height: 100%;
 }
 
 .comment_wrapper {
@@ -120,64 +150,44 @@ p {
   padding-top: 10px;
 }
 
-.third {
-  width: 60%;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
-
-.fourth {
-  width: 40%;
-  border-bottom: 1px solid black;
-}
-
-.about_text {
+.about_content {
   width: 500px;
   padding: 60px 0px;
-  text-align: justify;
 }
 
 .services {
-  border-bottom: solid 1px black;
+  padding: 100px 20px 60px 20px;
 }
 
-.service_wrapper {
-  padding: 60px 100px;
-  text-align: center;
-}
-
-.service_type_wrapper:not(:last-child) {
-  padding-bottom: 20px;
-}
-
-.service_type {
-  padding-bottom: 20px;;
-}
-
-.service_type_name {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.service_type_description {
-  font-style: italic;
+.services:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .service {
+  width: 240px;
   padding: 8px 0px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
 .service_name {
   color: black;
+  text-align: center;
 }
 
 .service_description {
   color: grey;
+  font-size: 14px;
+  padding: 6px 20px;
+  text-align: left;
 }
 
 .contact {
   padding: 60px;
   text-align: center;
+  font-size: 40px;
 }
 
 .contact a {
@@ -187,4 +197,30 @@ p {
 .contact a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.college {
+  padding: 0 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.light_background {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.dark_background {
+  background-color: rgb(176, 235, 233);
+}
+
+.very_dark_background {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.caption {
+  margin: 10px 0px;
+  text-align: right;
+  font-size: 12px;
 }
