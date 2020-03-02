@@ -223,7 +223,8 @@ p {
 }
 
 blockquote {
-  padding: 0px 8px;
+  padding: 4px 12px;
+  quotes: "\201C""\201D";
 }
 
 .author {
@@ -276,6 +277,7 @@ blockquote {
 
   .navbar-brand {
     text-align: center;
+    margin-top: 50px;
   }
 
   .what, .how {
@@ -299,7 +301,7 @@ blockquote {
   }
 
   .services {
-    padding: 80px 40px 20px 40px;
+    padding: 100px 40px 20px 40px;
   }
 
 }
