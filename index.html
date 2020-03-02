@@ -25,12 +25,17 @@
 <body>
 
   <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="d-flex flex-grow-1">
         <span class="w-100 d-lg-none d-block">
           <!-- hidden spacer to center brand on mobile --></span>
         <a class="navbar-brand mx-auto d-inline-block" href="#">
           <img src="images/logo.svg" class="logo" alt="The Admissions Edit">
+          <div class="tagline">
+            College Admissions Essay Coaching
+            <br>
+            <span class="light">by Deborah Bolzan</span>
+          </div>
         </a>
         <div class="w-100 text-right">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -42,6 +47,9 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
           <li class="nav-item">
             <a href="#how_what" class="nav-link m-2 menu-item">What + How</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link m-2 menu-item">Testimonials</a>
           </li>
           <li class="nav-item">
             <a href="#about" class="nav-link m-2 menu-item">About Deborah</a>
@@ -58,27 +66,22 @@
         </ul>
       </div>
     </nav>
-    <div class="tagline">
-      College Admissions Essay Coaching
-      <br>
-      <span class="light">by Deborah Bolzan</span>
-    </div>
   </div>
   <div class="container-fluid">
-    <div class="d-flex row_0">
-      <div class="d-flex align-items-center justify-content-center section_0">
+    <div class="d-flex row">
+      <div class="d-flex align-items-center justify-content-center section_0 col-md-10 col-xs-12">
         <div class="declaration_container">
           <h1>Helping students share their stories.</h1>
         </div>
       </div>
-      <div class="d-flex align-items-center justify-content-center section_1">
+      <div class="d-flex align-items-center justify-content-center section_1 col-md-2 col-xs-12">
         <div class="profile_container">
           <img src="images/deborahbolzan_2.jpg" class="profile" alt="Deborah Bolzan">
         </div>
       </div>
     </div>
-    <div class="d-flex row_1" id="how_what">
-      <div class="section_2">
+    <div class="d-flex row" id="how_what">
+      <div class="section_2 col-md-3 col-xs-12">
         <span class="title">
           What
         </span>
@@ -92,7 +95,7 @@
           </p>
         </div>
       </div>
-      <div class="section_3">
+      <div class="section_3 col-md-5 col-xs-12">
         <div class="colleges">
           <span class="college very_dark_background">Colleges Visited</span>
           <span class="college light_background">Agnes Scott College</span>
@@ -136,7 +139,7 @@
           <span class="college very_dark_background">&hairsp;</span>
         </div>
       </div>
-      <div class=" section_4">
+      <div class=" section_4 col-md-4 col-xs-12">
         <span class="title">
           How
         </span>
@@ -156,12 +159,50 @@
         </div>
       </div>
     </div>
-    <div class="d-flex row_2" id="about">
+    <div id="testimonials">
       <span class="title">
-        About Deborah
+        Testimonials
       </span>
-      <div class="section_5">
-        <div class="d-flex align-items-center justify-content-center portrait_container">
+      <div class="section_9">
+        <div class="d-flex flex-wrap align-items-center justify-content-center testimonials">
+          <div class="card">
+            <blockquote>
+              Deborah is the single best college counselor in the world. There is no debate!"
+            </blockquote>
+            <div class="d-flex align-items-right justify-content-end">
+              <div class="author very_dark_background">
+                Fredric C.
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-end card">
+            <blockquote>
+              Deborah's greatest skill is her all-around knowledge of the college application process. She's not just an
+              incredible editor – she also helped me plan my visits to Northwestern and UC Davis.
+            </blockquote>
+            <div class="d-flex align-items-right justify-content-end">
+              <div class="author very_dark_background">
+                Jean F.
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-end card">
+            <blockquote>
+              I can't get over how good Deborah's editing of my essays was. She really perfected them beyond my
+              expectations.
+            </blockquote>
+            <div class="d-flex align-items-right justify-content-end">
+              <div class="author very_dark_background">
+                Cécile R.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex row" id="about">
+      <div class="section_5 col-md-5 col-xs-12 d-flex align-items-center justify-content-center">
+        <div class="portrait_container">
           <div>
             <img src="images/deborahbolzan_1.jpg" class="portrait" alt="Deborah Bolzan">
             <div class="caption light">
@@ -172,7 +213,10 @@
           </div>
         </div>
       </div>
-      <div class="section_6">
+      <div class="section_6 col-md-7 col-xs-12">
+        <span class="title">
+          About Deborah
+        </span>
         <div class="d-flex align-items-center justify-content-center">
           <div class="about_content">
             <p>
@@ -222,7 +266,7 @@
       </div>
     </div>
   </div>
-  <div class="row_3" id="essays">
+  <div id="essays">
     <span class="title">
       Essay Services<br>
       <span class="subtitle">
@@ -232,34 +276,34 @@
     </span>
     <div class="section_7">
       <div class="d-flex flex-wrap align-items-center justify-content-center services">
-        <div class="service light_background">
+        <div class="card">
           <div class="service_name">Premium Package</div>
           <div class="service_description">Unlimited personal statement, core and supplemental essays and edits.
           </div>
         </div>
-        <div class="service">
+        <div class="card">
           <div class="service_name">Core Essay Package</div>
           <div class="service_description">Unlimited review of one core essay.</div>
           <div class="service_description">Common App, Coalition App, UC, UCAS, UBC, Sciences Po/Columbia, etc.
           </div>
         </div>
-        <div class="service light_background">
+        <div class="card">
           <div class="service_name">Supplemental Essay Review</div>
           <div class="service_description">Unlimited review of each essay, priced by individual essay length.
           </div>
         </div>
-        <div class="service">
+        <div class="card">
           <div class="service_name">Existing Essay Refinement</div>
           <div class="service_description">Coach to shorten, lengthen or re-focus an existing essay.</div>
         </div>
-        <div class="service light_background">
+        <div class="card">
           <div class="service_name">Existing Essay Review</div>
           <div class="service_description">Review and provide comments to a finished essay.</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row_4" id="counseling">
+  <div id="counseling">
     <span class="title">
       Counseling Services<br>
       <span class="subtitle">
@@ -268,19 +312,19 @@
     </span>
     <div class="section_8">
       <div class="d-flex flex-wrap align-items-center justify-content-center services">
-        <div class="service light_background">
+        <div class="card">
           <div class="service_name">College List-Building</div>
           <div class="service_description">I'm a great service with a great description, you should buy me!</div>
         </div>
-        <div class="service">
+        <div class="card">
           <div class="service_name">Campus Visit Planning</div>
           <div class="service_description">I'm a great service with a great description, you should buy me!</div>
         </div>
-        <div class="service light_background">
+        <div class="card">
           <div class="service_name">Interview Preparation</div>
           <div class="service_description">I'm a great service with a great description, you should buy me!</div>
         </div>
-        <div class="service">
+        <div class="card">
           <div class="service_name">Group Essay Workshops</div>
           <div class="service_description">I'm a great service with a great description, you should buy me!</div>
         </div>
@@ -289,7 +333,7 @@
   </div>
   </div>
   </div>
-  <div class="row_5" id="contact">
+  <div id="contact">
     <div class="d-flex align-items-center justify-content-center contact">
       <div>
         <a href="mailto:deborah@theadmissionsedit.com?subject=I%27m Interested">deborah@theadmissionsedit.com</a>
