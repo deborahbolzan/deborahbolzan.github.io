@@ -127,10 +127,6 @@ p {
   border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.colleges {
-  padding: 60px 40px;
-}
-
 .what, .how {
   padding: 80px 40px 60px 40px;
 }
@@ -179,6 +175,11 @@ p {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.colleges {
+  padding: 20px 20px;
+  line-height: 1.5;
+}
+
 .college {
   padding: 0 6px;
   border-radius: 2px;
@@ -186,16 +187,12 @@ p {
   font-size: 14px;
 }
 
-.card .college {
-  margin: 2px 0px 2px 2px;
-}
-
-.testimonials .card {
-  width: 350px;
-}
-
 .light_background {
   background-color: rgb(240, 240, 240);
+}
+
+.medium_background {
+  background-color: rgb(161, 161, 161);
 }
 
 .dark_background {
@@ -208,6 +205,14 @@ p {
 
 .very_dark_background {
   background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.gray_text {
+  color: lightgray;
+}
+
+.white_text {
   color: white;
 }
 
@@ -234,21 +239,24 @@ p {
   background-color: rgb(240, 240, 240);
 }
 
+.testimonials .card {
+  width: 350px;
+  padding: 4px 10px;
+}
+
+.card .college {
+  margin: 2px;
+}
+
 blockquote {
-  padding: 0px;
   margin: 8px;
 }
 
 .author {
-  display: inline-block;
   text-align: right;
-  padding: 0 6px;
   border-radius: 2px;
-  margin: 2px 2px;
-}
-
-.testimonial {
-  padding: 4px 10px;
+  margin: 2px;
+  padding: 0 6px;
 }
 
 @media (max-width: 768px) {
