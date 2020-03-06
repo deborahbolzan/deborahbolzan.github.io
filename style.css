@@ -185,6 +185,7 @@ p {
   border-radius: 2px;
   white-space: nowrap;
   font-size: 14px;
+  background-color: rgb(240, 240, 240);
 }
 
 .light_background {
@@ -206,10 +207,6 @@ p {
 .very_dark_background {
   background-color: rgb(40, 40, 40);
   color: white;
-}
-
-.gray_text {
-  color: lightgray;
 }
 
 .white_text {
