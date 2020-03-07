@@ -12,8 +12,8 @@ body, .container-fluid, .row {
 }
 
 .logo {
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
   margin: 20px 20px 0px 20px;
 }
 
@@ -27,6 +27,7 @@ body, .container-fluid, .row {
 }
 
 .title {
+  font-size: 18px;
   position: absolute;
   margin: 20px 36px;
   color: rgba(0, 0, 0, 0.5);
@@ -70,11 +71,14 @@ p {
   break-after: column;
 }
 
+.marbled {
+  background-image: url("images/marble.jpg");
+  background-repeat: repeat;
+}
+
 .section_0 {
   border-top: 1px solid rgb(220, 220, 220);
   border-bottom: 1px solid rgb(220, 220, 220);
-  background-image: url("images/marble.jpg");
-  background-repeat: repeat;
 }
 
 .section_1 {
@@ -98,11 +102,12 @@ p {
 
 .section_5 {
   border-bottom: 1px solid rgb(240, 240, 240);
-  border-right: 1px solid rgb(240, 240, 240);
+  border-right: 1px solid rgb(220, 220, 220);
 }
 
 .section_6 {
   border-bottom: 1px solid rgb(240, 240, 240);
+  background-repeat: repeat;
 }
 
 .section_7 {
