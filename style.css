@@ -346,4 +346,9 @@ blockquote {
     margin: 14px 0px;
   }  
 
+  .navbar-toggler {
+    position: relative;
+    right: 30px;
+  }
+
 }
