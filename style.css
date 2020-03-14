@@ -255,6 +255,21 @@ blockquote {
   padding: 0 6px;
 }
 
+#switch-languages {
+  width: 24px;
+  height: 24px;
+  margin: 14px;
+  transition: transform .1s;
+}
+
+#switch-languages:hover {
+  transform: scale(1.2);
+}
+
+#switch-languages:focus {
+  outline:0;
+}
+
 @media (max-width: 768px) {
 
   .section_0 {
@@ -328,5 +343,10 @@ blockquote {
   .card {
     margin: 20px;
   }
+
+  #switch-languages {
+    width: 100%;
+    margin: 14px 0px;
+  }  
 
 }

@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav ml-auto flex">
           <li class="nav-item">
             <a href="#about" class="nav-link m-2 menu-item">About Deborah</a>
           </li>
@@ -63,6 +63,9 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
           </li>
+          <li class="nav-item">
+            <input type="image" id="switch-languages" src="./images/french.svg" />
+          </li>
         </ul>
       </div>
     </nav>
@@ -71,7 +74,10 @@
     <div class="d-flex row">
       <div class="d-flex align-items-center justify-content-center section_0 marbled col-md-12 col-xs-12">
         <div class="declaration_container">
-          <h1>Helping students share their story.</h1>
+          <h1>
+            <span lang="english">Helping students share their story.</span>
+            <span lang="french">Aider les étudiants à partager leur histoire.</span>
+          </h1>
         </div>
       </div>
     </div>
@@ -300,30 +306,30 @@
           <div class="service_name">Existing Essays</div>
           <div class="service_description">Coach to shorten, lengthen or re-focus an existing essay.</div>
         </div>
+      </div>
     </div>
-  </div>
-  <div id="additional">
-    <span class="title">
-      Additional Services<br>
-      <span class="subtitle">
-        Expert support and advice on pivotal admissions steps.
+    <div id="additional">
+      <span class="title">
+        Additional Services<br>
+        <span class="subtitle">
+          Expert support and advice on pivotal admissions steps.
+        </span>
       </span>
-    </span>
-    <div class="section_8">
-      <div class="d-flex flex-wrap align-items-center justify-content-center services">
-        <div class="card">
-          <div class="service_name">College List-Building</div>
-          <div class="service_description">Design and edit a balanced list that reflects the student’s aptitudes,
-            interests and potential.</div>
-        </div>
-        <div class="card">
-          <div class="service_name">Interview Preparation</div>
-          <div class="service_description">Share my experience as an admissions interviewer to help students shine in
-            college interviews.</div>
+      <div class="section_8">
+        <div class="d-flex flex-wrap align-items-center justify-content-center services">
+          <div class="card">
+            <div class="service_name">College List-Building</div>
+            <div class="service_description">Design and edit a balanced list that reflects the student’s aptitudes,
+              interests and potential.</div>
+          </div>
+          <div class="card">
+            <div class="service_name">Interview Preparation</div>
+            <div class="service_description">Share my experience as an admissions interviewer to help students shine in
+              college interviews.</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
   </div>
   <div id="contact">
@@ -339,7 +345,7 @@
 
 
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS, then LinkedIn -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -349,6 +355,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <!-- Translation Javascript -->
+  <script>
+    $('[lang="french"]').hide();
+    $('#switch-languages').click(function () {
+      $('[lang="french"]').toggle();
+      $('[lang="english"]').toggle();
+      $("#switch-languages").attr('src', $("#switch-languages").attr("src") == "./images/french.svg" ? "./images/english.svg" : "./images/french.svg");
+    });
+  </script>
 </body>
 
 </html>
