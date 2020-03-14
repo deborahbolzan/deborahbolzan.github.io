@@ -300,8 +300,9 @@ blockquote {
   .tagline {
     text-align: center;
     margin: 20px 0px 6px 0px;
-    width: 200px;
-    overflow: wrap;
+    width: 180px;
+    white-space:normal;
+    word-wrap: break-word;
   }
 
   .nav-link {
@@ -346,9 +347,9 @@ blockquote {
     margin: 14px 0px;
   }  
 
-  .navbar-toggler {
+  /* .navbar-toggler {
     position: relative;
     right: 30px;
-  }
+  } */
 
 }
