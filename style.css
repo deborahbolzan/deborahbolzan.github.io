@@ -300,6 +300,8 @@ blockquote {
   .tagline {
     text-align: center;
     margin: 20px 0px 6px 0px;
+    width: 200px;
+    overflow: wrap;
   }
 
   .nav-link {
