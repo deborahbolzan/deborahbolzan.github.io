@@ -259,11 +259,6 @@ blockquote {
   width: 24px;
   height: 24px;
   margin: 14px;
-  transition: transform .1s;
-}
-
-#switch-languages:hover {
-  transform: scale(1.2);
 }
 
 #switch-languages:focus {
