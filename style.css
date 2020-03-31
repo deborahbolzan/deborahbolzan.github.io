@@ -217,31 +217,30 @@ p {
 
 .testimonial {
   padding: 40px;
-  font-size: 16px;
   text-align: center;
 }
 
-.testimonial:nth-child(1) {
+.testimonial_1 {
   border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.testimonial:nth-child(2) {
+.testimonial_2 {
   border-left: 1px solid rgb(240, 240, 240);
   border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.testimonial:nth-child(3) {
+.testimonial_3 {
   border-left: 1px solid rgb(240, 240, 240);
   border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.testimonial:nth-child(5) {
+.testimonial_5 {
   border-left: 1px solid rgb(240, 240, 240);
 }
 
 .statement {
-  width: 300px;
-  padding-bottom: 14px;
+  max-width: 300px;
+  padding: 0px 20px 14px 20px;
   font-style: italic;
 }
 
@@ -350,28 +349,27 @@ blockquote {
     padding: 60px 0px 20px 0px;
   }
 
-  .testimonial:nth-child(1) {
+ .testimonial_1 {
     border-left: none;
     border-bottom: 1px solid rgb(240, 240, 240);
   }
 
-  .testimonial:nth-child(2) {
+.testimonial_2 {
     border-left: none;
     border-bottom: 1px solid rgb(240, 240, 240);
   }
 
-  .testimonial:nth-child(3) {
+.testimonial_3 {
     border-left: none;
     border-bottom: 1px solid rgb(240, 240, 240);
   }
 
-  .testimonial:nth-child(4) {
+ .testimonial_4 {
     border-left: none;
     border-bottom: 1px solid rgb(240, 240, 240);
   }
 
-
-  .testimonial:nth-child(5) {
+.testimonial_5 {
     border-left: none;
     border-bottom: none;
 }
