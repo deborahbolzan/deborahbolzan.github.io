@@ -93,7 +93,6 @@ p {
 
 .section_3 {
   border-bottom: 1px solid rgb(240, 240, 240);
-  border-right: 1px solid rgb(240, 240, 240);
 }
 
 .section_4 {
@@ -216,8 +215,34 @@ p {
   font-size: 12px;
 }
 
-.testimonials {
-  padding: 80px 40px 60px 40px;
+.testimonial {
+  padding: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.testimonial:nth-child(1) {
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.testimonial:nth-child(2) {
+  border-left: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.testimonial:nth-child(3) {
+  border-left: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.testimonial:nth-child(5) {
+  border-left: 1px solid rgb(240, 240, 240);
+}
+
+.statement {
+  width: 300px;
+  padding-bottom: 14px;
+  font-style: italic;
 }
 
 .card {
@@ -285,7 +310,6 @@ blockquote {
   
   .section_3 {
     border-bottom: 1px solid rgb(240, 240, 240);
-    border-right: none;
   }
   
   .section_4 {
@@ -323,8 +347,34 @@ blockquote {
   }
 
   .testimonials {
-    padding: 60px 40px 20px 40px;
+    padding: 60px 0px 20px 0px;
   }
+
+  .testimonial:nth-child(1) {
+    border-left: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+  }
+
+  .testimonial:nth-child(2) {
+    border-left: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+  }
+
+  .testimonial:nth-child(3) {
+    border-left: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+  }
+
+  .testimonial:nth-child(4) {
+    border-left: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+  }
+
+
+  .testimonial:nth-child(5) {
+    border-left: none;
+    border-bottom: none;
+}
 
   .portrait_container {
     padding: 40px 40px;
