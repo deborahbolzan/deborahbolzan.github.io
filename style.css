@@ -366,25 +366,25 @@ blockquote {
     border-bottom: 1px solid rgb(240, 240, 240);
   }
 
-.testimonial_2 {
-    border-left: none;
-    border-bottom: 1px solid rgb(240, 240, 240);
-  }
+  .testimonial_2 {
+      border-left: none;
+      border-bottom: 1px solid rgb(240, 240, 240);
+    }
 
-.testimonial_3 {
-    border-left: none;
-    border-bottom: 1px solid rgb(240, 240, 240);
-  }
+  .testimonial_3 {
+      border-left: none;
+      border-bottom: 1px solid rgb(240, 240, 240);
+    }
 
- .testimonial_4 {
-    border-left: none;
-    border-bottom: 1px solid rgb(240, 240, 240);
-  }
+  .testimonial_4 {
+      border-left: none;
+      border-bottom: 1px solid rgb(240, 240, 240);
+    }
 
-.testimonial_5 {
-    border-left: none;
-    border-bottom: none;
-}
+  .testimonial_5 {
+      border-left: none;
+      border-bottom: none;
+  }
 
   .portrait_container {
     padding: 40px 40px;
@@ -406,5 +406,9 @@ blockquote {
     width: 100%;
     margin: 14px 0px;
   }  
+
+  .caption {
+    text-align: center;
+  }
 
 }
