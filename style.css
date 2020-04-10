@@ -147,6 +147,10 @@ p {
   text-align: center;
 }
 
+.section_12 {
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
 .what, .how {
   padding: 70px 40px 30px 40px;
 }
@@ -329,6 +333,10 @@ blockquote {
   .section_5 {
     border-bottom: 1px solid rgb(240, 240, 240);
     border-right: none;
+  }
+
+  .section_12 {
+    border-bottom: 1px solid rgb(240, 240, 240);
   }
 
   .tagline {
