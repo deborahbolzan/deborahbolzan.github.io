@@ -37,6 +37,7 @@ body, .container-fluid, .row {
   position: absolute;
   margin: 20px 40px;
   color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .subtitle {
@@ -194,11 +195,14 @@ p {
   border-radius: 2px;
   white-space: nowrap;
   font-size: 14px;
-  background-color: rgb(240, 240, 240);
 }
 
 .light_background {
   background-color: rgb(240, 240, 240);
+}
+
+.light_background:hover {
+  background-color: rgb(234, 234, 234);
 }
 
 .medium_background {
@@ -224,6 +228,10 @@ p {
   color: white;
 }
 
+.no-italics {
+  font-style: normal;
+}
+
 .caption {
   margin: 10px 0px;
   text-align: right;
@@ -233,6 +241,8 @@ p {
 .testimonial {
   padding: 40px;
   text-align: center;
+  background: white;
+  z-index: 0;
 }
 
 .testimonial_1 {
@@ -249,12 +259,17 @@ p {
   border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.testimonial_5 {
+.testimonial_4 {
   border-left: 1px solid rgb(240, 240, 240);
 }
 
+.testimonial_5 {
+  border-left: 1px solid rgb(240, 240, 240);
+  border-right: 1px solid rgb(240, 240, 240);
+}
+
 .statement {
-  max-width: 300px;
+  max-width: 340px;
   padding: 0px 20px 14px 20px;
   font-style: italic;
 }
@@ -272,8 +287,15 @@ p {
   background-color: rgb(240, 240, 240);
 }
 
+.card:nth-of-type(odd):hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.card:nth-of-type(even):hover {
+  background-color: rgb(250, 250, 250);
+}
+
 .testimonials .card {
-  /* width: 350px; */
   text-align: left;
   padding: 6px;
 }
@@ -311,7 +333,7 @@ blockquote {
     border-bottom: 1px solid rgb(220, 220, 220);
     border-right: none;
   }
-  
+
   .section_1 {
     border-top: none;
     border-bottom: 1px solid rgb(240, 240, 240);
@@ -321,11 +343,11 @@ blockquote {
     border-bottom: 1px solid rgb(240, 240, 240);
     border-right: none;
   }
-  
+
   .section_3 {
     border-bottom: 1px solid rgb(240, 240, 240);
   }
-  
+
   .section_4 {
     border-bottom: 1px solid rgb(240, 240, 240);
   }
@@ -372,6 +394,7 @@ blockquote {
  .testimonial_1 {
     border-left: none;
     border-bottom: 1px solid rgb(240, 240, 240);
+    padding-top:60px;
   }
 
   .testimonial_2 {
@@ -413,7 +436,7 @@ blockquote {
   #switch-languages {
     width: 100%;
     margin: 14px 0px;
-  }  
+  }
 
   .caption {
     text-align: center;
