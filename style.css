@@ -260,12 +260,16 @@ p {
 }
 
 .testimonial_4 {
-  border-left: 1px solid rgb(240, 240, 240);
+  /* Nothing for now. */
 }
 
 .testimonial_5 {
   border-left: 1px solid rgb(240, 240, 240);
-  border-right: 1px solid rgb(240, 240, 240);
+}
+
+.testimonial_6 {
+  border-left: 1px solid rgb(240, 240, 240);
+  width: 200px;
 }
 
 .statement {
@@ -413,6 +417,11 @@ blockquote {
     }
 
   .testimonial_5 {
+      border-left: none;
+      border-bottom: 1px solid rgb(240, 240, 240);
+  }
+
+  .testimonial_6 {
       border-left: none;
       border-bottom: none;
   }
