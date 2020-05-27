@@ -316,6 +316,11 @@ blockquote {
   outline:0;
 }
 
+.linkedin {
+  width: 40px;
+  margin-top: 4px;
+}
+
 @media (max-width: 768px) {
 
   .section_0 {
