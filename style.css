@@ -182,7 +182,7 @@ p {
 }
 
 .colleges {
-  padding: 40px 20px;
+  padding: 60px 40px 40px;
   line-height: 1.5;
 }
 
@@ -369,13 +369,19 @@ blockquote {
     margin-top: 50px;
   }
 
+  .navbar-toggler {
+    margin: 10px 0px 0px 30px;
+  }
+
   .what, .how {
     padding: 60px 40px 20px 40px;
   }
 
   .colleges {
-    padding: 10px 10px;
+    padding: 40px 20px;
+    line-height: 1.5;
   }
+  
 
   .portrait_container {
     padding: 40px 40px;
@@ -403,11 +409,11 @@ blockquote {
   }
 
   .carousel-item {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .carousel-item {
-    padding: 0px 10px 0px;
+    padding: 0px 14px 0px;
   }
   
   .carousel-control-prev {
