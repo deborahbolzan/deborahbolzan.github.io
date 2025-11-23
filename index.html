@@ -18,10 +18,10 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <!-- Title -->
   <title>The Admissions Edit</title>
@@ -684,6 +684,11 @@
   </script>
   <!-- Map -->
   <script>
+    function isMobileView() {
+      const mobileMediaQuery = window.matchMedia('(max-width: 575.98px)');
+      return mobileMediaQuery.matches;
+    }
+
     var universities = [
       { name: 'Babson College', lat: 42.3000, long: -71.2600 },
       { name: 'Bocconi', lat: 45.4500, long: 9.1900 },
@@ -770,13 +775,14 @@
       { name: 'Worcester Polytechnic Institute', lat: 42.2700, long: -71.8100 },
       { name: 'Yale-NUS College', lat: 1.3100, long: 103.7700 } // Yale-NUS is in Singapore, longitude is 103.77° East
     ];
-    var map = L.map('map').setView([46.4364, -60.6927], 3);
+    const zoom = isMobileView() ? 1 : 3;
     const markerIcon = L.icon({
       iconUrl: 'map_marker.png',
       iconSize: [34, 50],
       iconAnchor: [22.5, 60],
       popupAnchor: [0, -62]
     });
+    var map = L.map('map').setView([46.4364, -60.6927], zoom);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
