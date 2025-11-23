@@ -317,6 +317,10 @@ blockquote {
   margin-top: 4px;
 }
 
+#map {
+  height: 300px;
+}
+
 @media (max-width: 768px) {
 
   .section_0 {
@@ -381,7 +385,7 @@ blockquote {
     padding: 40px 20px;
     line-height: 1.5;
   }
-  
+
 
   .portrait_container {
     padding: 40px 40px;
@@ -415,12 +419,12 @@ blockquote {
   .carousel-item {
     padding: 0px 14px 0px;
   }
-  
+
   .carousel-control-prev {
     width: 12px;
     margin-left: 10px;
   }
-  
+
   .carousel-control-next {
     width: 12px;
     margin-right: 10px;

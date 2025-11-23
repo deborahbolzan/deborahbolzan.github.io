@@ -26,6 +26,12 @@
   <!-- Title -->
   <title>The Admissions Edit</title>
 
+  <!-- Mapping -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
 </head>
 
 <body>
@@ -190,16 +196,17 @@
               <span lang="english">
                 I hold a bachelor's degree in English from the University of Virginia, a master's degree in Integrated
                 Marketing Communications from Northwestern University’s Medill School of Journalism, and a certificate
-                with distinction in College Counseling from UCLA Extension. Since 2019, I have been an adjunct counselor 
-                at the Lycée Français of New York, where I provide coaching and essay support to high school students 
+                with distinction in College Counseling from UCLA Extension. Since 2019, I have been an adjunct counselor
+                at the Lycée Français of New York, where I provide coaching and essay support to high school students
                 applying to universities around the world.
               </span>
               <span lang="french">
                 Je détiens une license en Anglais de l’université de Virginie, un masters en Communications intégrées de
                 marketing de l’école de journalisme Medill à l’université Northwestern, et un certificat en Conseil
                 universitaire obtenu avec distinction de l’université de Californie à Los Angeles. Depuis 2019, je suis
-                conseillère auxiliaire au Lycée français de New York, où je <i>coache</i> et accompagne dans leurs rédactions
-                les élèves postulant aux universités du monde entier. 
+                conseillère auxiliaire au Lycée français de New York, où je <i>coache</i> et accompagne dans leurs
+                rédactions
+                les élèves postulant aux universités du monde entier.
               </span>
             </p>
             <p>
@@ -215,10 +222,12 @@
             </p>
             <p>
               <span lang="english">
-                Recently relocated to Milan, I am eager to start helping a new season of international students share their story.
+                Recently relocated to Milan, I am eager to start helping a new season of international students share
+                their story.
               </span>
               <span lang="french">
-                Je travaille maintenant depuis Milan, où j'ai hâte d'aider un nouveau groupe d'étudiants internationaux à partager leur histoire.
+                Je travaille maintenant depuis Milan, où j'ai hâte d'aider un nouveau groupe d'étudiants internationaux
+                à partager leur histoire.
               </span>
             </p>
           </div>
@@ -251,13 +260,16 @@
           <div class="carousel-item">
             <div class="statement">
               <span lang="english">
-                "Deborah made the essay-writing process not only easy, but effective. We are so grateful to her for 
-                giving our daughter the opportunity to find a confidence that will last well beyond the simple application 
-                process. Today, our daughter is ready and steady to start her new journey, at her top-choice university."
+                "Deborah made the essay-writing process not only easy, but effective. We are so grateful to her for
+                giving our daughter the opportunity to find a confidence that will last well beyond the simple
+                application
+                process. Today, our daughter is ready and steady to start her new journey, at her top-choice
+                university."
               </span>
               <span lang="french">
                 « Deborah a facilité non seulement la rédaction des essais, mais aussi leur efficacité. Nous lui sommes
-                très reconnaissants d'avoir donné à notre fille l'opportunité de découvrir une confiance en soi qui dépassera
+                très reconnaissants d'avoir donné à notre fille l'opportunité de découvrir une confiance en soi qui
+                dépassera
                 ce simple processus d'application. Aujourd'hui, notre fille est prête à commencer son parcours
                 dans l'université de son choix. »
               </span>
@@ -397,15 +409,17 @@
           <div class="carousel-item">
             <div class="statement">
               <span lang="english">
-                "Deborah expertly guides her students to dive deep into the marrow of their existence and reveal 
-                compelling and highly personal narratives that stand out from the crowd and make each voice resonate 
-                with force and authenticity. Her young clients not only secure coveted acceptances but are forever changed."
+                "Deborah expertly guides her students to dive deep into the marrow of their existence and reveal
+                compelling and highly personal narratives that stand out from the crowd and make each voice resonate
+                with force and authenticity. Her young clients not only secure coveted acceptances but are forever
+                changed."
               </span>
               <span lang="french">
                 « Deborah guide ses étudiants à plonger au plus profond de leur existence pour révéler des récits
                 convaincants et personnels qui sortent de l'ordinaire et font résonner leur voix avec force et
-                authenticité. Ses jeunes clients font plus qu'obtenir des lettres d'admission aux universités les plus recherchées;
-                 ils sont changés à jamais. »
+                authenticité. Ses jeunes clients font plus qu'obtenir des lettres d'admission aux universités les plus
+                recherchées;
+                ils sont changés à jamais. »
               </span>
             </div>
             <span class="author medium_background">Nathalie</span>
@@ -455,9 +469,11 @@
         </a>
       </div>
     </div>
+    <div id="map"></div>
     <div id="admissions" class="section_12 col-md-12 col-xs-12">
       <div class="colleges">
-        <span class="college medium_background white_text"><span lang="english">My students have been admitted to</span><span lang="french">Mes élèves ont été admis à</span></span>
+        <span class="college medium_background white_text"><span lang="english">My students have been admitted
+            to</span><span lang="french">Mes élèves ont été admis à</span></span>
         <span class="college light_background gray_text">Babson College</span>
         <span class="college light_background gray_text">Bocconi</span>
         <span class="college light_background gray_text">Boston College</span>
@@ -664,6 +680,112 @@
       $innerCarousel.animate({
         height: height
       });
+    });
+  </script>
+  <!-- Map -->
+  <script>
+    var universities = [
+      { name: 'Babson College', lat: 42.3000, long: -71.2600 },
+      { name: 'Bocconi', lat: 45.4500, long: 9.1900 },
+      { name: 'Boston College', lat: 42.3400, long: -71.1700 },
+      { name: 'Boston University', lat: 42.3500, long: -71.1100 },
+      { name: 'Brown University', lat: 41.8300, long: -71.4000 },
+      { name: 'Bucknell University', lat: 40.9500, long: -76.8900 },
+      { name: 'Carnegie Mellon University', lat: 40.4400, long: -79.9400 },
+      { name: 'Case Western Reserve University', lat: 41.5000, long: -81.6100 },
+      { name: 'Catholic University', lat: 38.9400, long: -77.0000 },
+      { name: 'Clark University', lat: 42.2500, long: -71.8200 },
+      { name: 'College of Charleston', lat: 32.7800, long: -79.9400 },
+      { name: 'Concordia University', lat: 45.4900, long: -73.5800 },
+      { name: 'Cornell University', lat: 42.4500, long: -76.4700 },
+      { name: 'Davidson College', lat: 35.5000, long: -80.8400 },
+      { name: 'Duke University', lat: 36.0000, long: -78.9400 },
+      { name: 'Eckerd College', lat: 27.7100, long: -82.6900 },
+      { name: 'Elon University', lat: 36.1000, long: -79.5100 },
+      { name: 'Emerson College', lat: 42.3500, long: -71.0700 },
+      { name: 'Emory University', lat: 33.8000, long: -84.3300 },
+      { name: 'EDHEC', lat: 50.6700, long: 3.1700 },
+      { name: 'ESCP', lat: 48.8600, long: 2.3800 },
+      { name: 'ESSEC', lat: 49.0300, long: 2.0800 },
+      { name: 'ESSEC - Centrale', lat: 49.0300, long: 2.0800 }, // Using ESSEC's location
+      { name: 'Fordham University', lat: 40.8600, long: -73.8900 },
+      { name: 'The George Washington University', lat: 38.9000, long: -77.0500 },
+      { name: 'Georgia Tech', lat: 33.7800, long: -84.4000 },
+      { name: 'HEC - Bocconi', lat: 48.7600, long: 2.1700 }, // Using HEC Paris's location
+      { name: 'IE Madrid', lat: 40.4800, long: -3.6900 },
+      { name: 'Imperial College London', lat: 51.5000, long: -0.1700 },
+      { name: 'Indiana University – Kelley School of Business', lat: 39.1700, long: -86.5200 },
+      { name: 'King\'s College London', lat: 51.5119, long: -0.1166 },
+      { name: 'Lehigh University', lat: 40.6100, long: -75.3800 },
+      { name: 'London School of Economics', lat: 51.5100, long: -0.1200 },
+      { name: 'Loughborough University', lat: 52.7700, long: -1.2300 },
+      { name: 'Loyola Marymount University', lat: 33.9700, long: -118.4200 },
+      { name: 'Manchester University', lat: 53.4600, long: -2.2300 }, // Approximated from search for University of Manchester
+      { name: 'McGill University', lat: 45.5100, long: -73.5800 },
+      // { name: 'McGill University – Centrale', lat: 45.5100, long: -73.5800 }, // Using McGill's location
+      { name: 'Miami University', lat: 39.5100, long: -84.7300 },
+      { name: 'Middlebury College', lat: 44.0100, long: -73.1800 },
+      { name: 'The New School', lat: 40.7400, long: -74.0000 },
+      { name: 'New York University', lat: 40.7300, long: -74.0000 },
+      { name: 'Northeastern London', lat: 51.5061, long: -0.0714 }, // Converted from 51°30′22″N 0°4′17″W
+      { name: 'Northeastern University', lat: 42.3400, long: -71.0900 },
+      { name: 'Northwestern University', lat: 42.0600, long: -87.6800 },
+      { name: 'The Ohio State University', lat: 40.0100, long: -83.0300 },
+      { name: 'Providence College', lat: 41.8400, long: -71.4300 },
+      { name: 'Purdue University', lat: 40.4200, long: -86.9200 },
+      { name: 'Saint Andrews', lat: 56.3400, long: -2.7900 },
+      { name: 'Santa Clara University', lat: 37.3500, long: -121.9400 },
+      { name: 'Sciences Po', lat: 48.8500, long: 2.3300 },
+      // { name: 'Sciences Po - Berkeley', lat: 48.8500, long: 2.3300 }, // Using Sciences Po's location
+      // { name: 'Sciences Po - Columbia', lat: 48.8500, long: 2.3300 }, // Using Sciences Po's location
+      { name: 'Southern Methodist University', lat: 32.8400, long: -96.7800 },
+      { name: 'SUNY Binghamton', lat: 42.0900, long: -75.9700 },
+      { name: 'Syracuse University', lat: 43.0400, long: -76.1300 },
+      { name: 'TAU – Columbia', lat: 32.0800, long: 34.7800 }, // Approximated from search for Tel Aviv University
+      { name: 'Trinity College', lat: 53.3400, long: -6.2500 },
+      { name: 'Tufts University', lat: 42.4100, long: -71.1200 },
+      { name: 'Tulane University', lat: 29.9400, long: -90.1200 },
+      { name: 'UC Berkeley', lat: 37.8700, long: -122.2600 },
+      { name: 'UCLA', lat: 34.0700, long: -118.4400 },
+      { name: 'UCSB', lat: 34.4100, long: -119.8500 },
+      { name: 'UCSD', lat: 32.8800, long: -117.2300 },
+      { name: 'University of Bath', lat: 51.3800, long: -2.3300 },
+      { name: 'University of Bristol', lat: 51.4600, long: -2.6000 },
+      { name: 'University of British Columbia', lat: 49.2600, long: -123.2500 },
+      { name: 'University of Chicago', lat: 41.7900, long: -87.6000 },
+      { name: 'University College London', lat: 51.5200, long: -0.1300 },
+      { name: 'University of Delaware', lat: 39.6800, long: -75.7500 },
+      { name: 'University of Denver', lat: 39.6800, long: -104.9600 },
+      { name: 'University of North Carolina at Chapel Hill', lat: 35.9000, long: -79.0500 },
+      { name: 'University of Pittsburgh', lat: 40.4400, long: -79.9600 },
+      { name: 'University of Rochester', lat: 43.1300, long: -77.6300 },
+      { name: 'University of Southern California', lat: 34.0200, long: -118.2900 },
+      { name: 'University of Vermont', lat: 44.4800, long: -73.2000 },
+      { name: 'University of Virginia', lat: 38.0300, long: -78.5100 },
+      { name: 'University of Warwick', lat: 52.3800, long: -1.5600 },
+      { name: 'USC World Bachelor in Business', lat: 34.0200, long: -118.2900 }, // Using USC's location, the coordinating institution
+      { name: 'Villanova University', lat: 40.0400, long: -75.3400 },
+      { name: 'Wake Forest University', lat: 36.1400, long: -80.2800 },
+      { name: 'Williams College', lat: 42.7100, long: -73.2000 },
+      { name: 'Worcester Polytechnic Institute', lat: 42.2700, long: -71.8100 },
+      { name: 'Yale-NUS College', lat: 1.3100, long: 103.7700 } // Yale-NUS is in Singapore, longitude is 103.77° East
+    ];
+    var map = L.map('map').setView([46.4364, -60.6927], 3);
+    const markerIcon = L.icon({
+      iconUrl: 'map_marker.png',
+      iconSize: [34, 50],
+      iconAnchor: [22.5, 60],
+      popupAnchor: [0, -62]
+    });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    universities.forEach((university) => {
+      var marker = L.marker([university.lat, university.long], {
+        icon: markerIcon,
+      }).addTo(map);
+      marker.bindPopup(university.name);
     });
   </script>
 </body>
