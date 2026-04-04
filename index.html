@@ -474,17 +474,22 @@
       <div class="colleges">
         <span class="college medium_background white_text"><span lang="english">My students have been admitted
             to</span><span lang="french">Mes élèves ont été admis à</span></span>
+        <span class="college light_background gray_text">Amherst College</span>
         <span class="college light_background gray_text">Babson College</span>
+        <span class="college light_background gray_text">Barnard College</span>
         <span class="college light_background gray_text">Bocconi</span>
         <span class="college light_background gray_text">Boston College</span>
         <span class="college light_background gray_text">Boston University</span>
+        <span class="college light_background gray_text">Bowdoin College</span>
         <span class="college light_background gray_text">Brown University</span>
         <span class="college light_background gray_text">Bucknell University</span>
         <span class="college light_background gray_text">California Institute of Technology</span>
         <span class="college light_background gray_text">Carnegie Mellon University</span>
         <span class="college light_background gray_text">Case Western Reserve University</span>
         <span class="college light_background gray_text">Catholic University</span>
+        <span class="college light_background gray_text">Claremont McKenna College</span>
         <span class="college light_background gray_text">Clark University</span>
+        <span class="college light_background gray_text">Colgate University</span>
         <span class="college light_background gray_text">Columbia University</span>
         <span class="college light_background gray_text">College of Charleston</span>
         <span class="college light_background gray_text">Concordia University</span>
@@ -502,6 +507,7 @@
         <span class="college light_background gray_text">Fordham University</span>
         <span class="college light_background gray_text">The George Washington University</span>
         <span class="college light_background gray_text">Georgia Tech</span>
+        <span class="college light_background gray_text">Haverford College</span>
         <span class="college light_background gray_text">HEC - Bocconi</span>
         <span class="college light_background gray_text">HIM Business School</span>
         <span class="college light_background gray_text">IE Madrid</span>
@@ -523,6 +529,7 @@
         <span class="college light_background gray_text">Northeastern University</span>
         <span class="college light_background gray_text">Northwestern University</span>
         <span class="college light_background gray_text">The Ohio State University</span>
+        <span class="college light_background gray_text">Princeton University</span>
         <span class="college light_background gray_text">Providence College</span>
         <span class="college light_background gray_text">Purdue University</span>
         <span class="college light_background gray_text">Saint Andrews</span>
@@ -531,6 +538,7 @@
         <span class="college light_background gray_text">Sciences Po - Berkeley</span>
         <span class="college light_background gray_text">Sciences Po - Columbia</span>
         <span class="college light_background gray_text">Southern Methodist University</span>
+        <span class="college light_background gray_text">Stanford University</span>
         <span class="college light_background gray_text">SUNY Binghamton</span>
         <span class="college light_background gray_text">Swiss Hotel Management School</span>
         <span class="college light_background gray_text">Syracuse University</span>
@@ -697,17 +705,22 @@
     }
 
     var universities = [
+      { name: 'Amherst College', lat: 42.3709, long: -72.5170 },
       { name: 'Babson College', lat: 42.3000, long: -71.2600 },
+      { name: 'Barnard College', lat: 40.8095, long: -73.9634 },
       { name: 'Bocconi', lat: 45.4500, long: 9.1900 },
       { name: 'Boston College', lat: 42.3400, long: -71.1700 },
       { name: 'Boston University', lat: 42.3500, long: -71.1100 },
+      { name: 'Bowdoin College', lat: 43.9077, long: -69.9640 },
       { name: 'Brown University', lat: 41.8300, long: -71.4000 },
       { name: 'Bucknell University', lat: 40.9500, long: -76.8900 },
       { name: 'California Institute of Technology', lat: 34.1377, long: -118.1253},
       { name: 'Carnegie Mellon University', lat: 40.4400, long: -79.9400 },
       { name: 'Case Western Reserve University', lat: 41.5000, long: -81.6100 },
       { name: 'Catholic University', lat: 38.9400, long: -77.0000 },
+      { name: 'Claremont McKenna College', lat: 34.1007, long: -117.7065 },
       { name: 'Clark University', lat: 42.2500, long: -71.8200 },
+      { name: 'Colgate University', lat: 42.8156, long: -75.5407 },
       { name: 'College of Charleston', lat: 32.7800, long: -79.9400 },
       { name: 'Columbia University', lat: 40.8075, long: -73.9626 },
       { name: 'Concordia University', lat: 45.4900, long: -73.5800 },
@@ -725,6 +738,7 @@
       { name: 'Fordham University', lat: 40.8600, long: -73.8900 },
       { name: 'The George Washington University', lat: 38.9000, long: -77.0500 },
       { name: 'Georgia Tech', lat: 33.7800, long: -84.4000 },
+      { name: 'Haverford College', lat: 40.0074, long: -75.3051 },
       { name: 'HEC - Bocconi', lat: 48.7600, long: 2.1700 }, // Using HEC Paris's location
       { name: 'HIM Business School', lat: 46.4327, long: 6.9109 },
       { name: 'IE Madrid', lat: 40.4800, long: -3.6900 },
@@ -746,6 +760,7 @@
       { name: 'Northeastern University', lat: 42.3400, long: -71.0900 },
       { name: 'Northwestern University', lat: 42.0600, long: -87.6800 },
       { name: 'The Ohio State University', lat: 40.0100, long: -83.0300 },
+      { name: 'Princeton University', lat: 40.3431, long: -74.6551 },
       { name: 'Providence College', lat: 41.8400, long: -71.4300 },
       { name: 'Purdue University', lat: 40.4200, long: -86.9200 },
       { name: 'Saint Andrews', lat: 56.3400, long: -2.7900 },
@@ -754,6 +769,7 @@
       // { name: 'Sciences Po - Berkeley', lat: 48.8500, long: 2.3300 }, // Using Sciences Po's location
       // { name: 'Sciences Po - Columbia', lat: 48.8500, long: 2.3300 }, // Using Sciences Po's location
       { name: 'Southern Methodist University', lat: 32.8400, long: -96.7800 },
+      { name: 'Stanford University', lat: 37.4277, long: -122.1701 },
       { name: 'SUNY Binghamton', lat: 42.0900, long: -75.9700 },
       { name: 'Swiss Hotel Management School', lat: 46.4316, long: 6.9377 },
       { name: 'Syracuse University', lat: 43.0400, long: -76.1300 },
